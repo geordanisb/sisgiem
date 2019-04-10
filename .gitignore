@@ -6,11 +6,13 @@
 *.1
 *.bak
 *.bak2
+*.backup
 *.svn
 *.w2p
 *.class
 *.rej
 *.orig
+*.sql
 Thumbs.db
 .DS_Store
 *.DS_Store
@@ -63,3 +65,10 @@ HOWTO-web2py-devel
 site-packages/
 logs/
 __pycache__/
+web2py.py
+anyserver.py
+gluon
+handlers
+extras
+examples
+scripts
