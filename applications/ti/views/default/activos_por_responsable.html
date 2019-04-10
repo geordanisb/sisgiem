@@ -1,0 +1,9 @@
+{{extend 'layout.html'}} 
+{{=A("Regresar",_href=request.env.http_referer,_class="btn btn-default")}}
+{{=grid}}
+<script>
+    $(document).ready(function(){
+        $(".horizontal .active").removeClass("active")
+        $("#ai").addClass("active")
+    })
+</script>

@@ -1,0 +1,22 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3>Cargar archivo cvs</h3>
+    </div>
+    <div class="panel-body">
+        <div class="alert alert-danger">
+            Esta operación puede tardar de 1 a 3 minutos en dependecia del número de activos y hardware de su PC.
+        </div>
+        {{=form}}
+    </div>
+
+</div>
+
+
+<script>
+$(document).ready(function(){
+$(".horizontal .active").removeClass("active")
+$("#cargar_csv").addClass("active")
+})
+</script>

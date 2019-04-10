@@ -1,0 +1,27 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3>Importar activos desde archivo csv</h3>
+    </div>
+    <div class="panel-body">
+        <div class="well">
+            <p>
+                Se necesitan específicamente los datos de: <code>Act.fijo, SNº, Nº inventario, Mon., Local, Ce.coste, Denominación del activo fijo, CritClas.5, Val.adq., Amo acum., Val.cont., Fe.capit.</code> exportados desde el SAP como archivo CSV (valores separados por coma); el sistema no admite otros campos.
+            </p>
+            <p>
+            La operación puede tardar varios segundos en dependecia del número de activos.
+            </p>
+            
+        </div>
+        {{=form}}
+    </div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+$(".horizontal .active").removeClass("active")
+$("#importar_activos").addClass("active")
+})
+</script>

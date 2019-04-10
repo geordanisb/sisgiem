@@ -1,0 +1,63 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{footer_enabled=False}}
+{{extend 'layout.html'}}
+
+<style type="text/css">
+		#socialdrawer{display:none!important;}
+		.main-container{margin-top:0!important;}
+	</style>
+
+
+	<table style="width: 523.75pt;">
+		<tr>
+			<td><p lang="es-AR" align="right" style="margin-bottom: 0cm"><img src="{{=URL('static','images/etecsa-logo.png')}}" name="Imagen1" align="bottom" width="220" height="78" border="0"/><br>
+		<small style="font-size:10px"><i>Departamento
+	Tecnolog&iacute;a de la Informaci&oacute;n.</i><br>
+<i>		Direcci&oacute;n
+	Territorial Matanzas.</i></small>
+</p></td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td style="text-align:center"><u><b>DICTAMEN T&Eacute;CNICO</b></u></td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td><p><b>Descripción del medio:</b> {{=denominacion}}</p></td>
+		</tr>
+		<tr>
+			<td><p><b>Marca:</b> {{=marca}}</p></td>
+		</tr>
+		<tr>
+			<td><p><b>Modelo:</b> {{=modelo}}</p></td>
+		</tr>
+		<tr>
+			<td><p><b>No. De Serie:</b> {{=no_serie}}</p></td>
+		</tr>
+		<tr>
+			<td><p><b>No. Inventario:</b> {{=no_inventario}}</p></td>
+		</tr>
+		<tr><td><p><b>Unidad Organizativa:</b> {{=entidad}}</p></td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><p>Se hace constar que el medio al que se hace referencia fue revisado por el personal del Taller de Grupo de Soporte, Dpto. TI con <b>Número de Orden de Servicio:</b> {{=orden_trabajo}} con el siguiente <b>Dictamen Técnico:</b> {{=dictamen}}</p></td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><strong>Por lo anterior expuesto se propone “Baja Técnica”.</strong></td></tr>
+		<tr><td><p><strong>Técnico Taller Dpto. TI: </strong> ____________________________________  <strong>Firma: </strong>___________________
+			<br><strong>Especialista Principal. Dpto. TI: </strong>____________________________________ <strong>Firma: </strong>___________________ </p></td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><p><strong>Recibido por:</strong> Unidad Organizativa: {{=entidad}}</p></td></tr>
+		<tr>
+			<td>
+				<p><strong>Responsable del Activo:</strong> <br><strong>Nombres y Apellidos:</strong> <u>{{=responsable}}</u>, <strong>Cargo: </strong>_________________________<br>
+					<strong>Fecha: </strong>______________________, <strong>Firma: </strong>_________________________
+				</p>
+			</td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td><p><strong>Vtbno:</strong><br> <strong>Jefe de Departamento TI.:</strong> <u>{{=jefe_dpto}}</u>,	<strong>Firma: </strong>___________________ <br></p></td></tr>
+
+	</table>
+</div>

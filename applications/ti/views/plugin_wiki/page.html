@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+{{from gluon.tools import prettydate}}
+{{if page:}}
+
+{{=H4(A(I(_class="glyphicon glyphicon-arrow-left"),' Regresar',_href=URL(r=request, f='index'),_class="btn btn-primary btn-xs"),A(I(_class="glyphicon glyphicon-edit"),' Editar',_href=URL(r=request, f='page_edit', args=page.slug),_class="btn btn-primary btn-xs"))}}
+{{if page.slug.startswith('meta-'):}}{{=CODE(page.body)}}{{else:}}{{=plugin_wiki.render(page.body)}}{{pass}}
+{{if plugin_wiki_editor:}}
+<div class="plugin_wiki_info"><em><strong>Última modificación por:</strong> {{=db.plugin_wiki_page.modified_by.represent(page.modified_by)}} {{=prettydate(page.modified_on,T)}} {{if plugin_wiki_editor:}}{{=A(I(_class="glyphicon glyphicon-list-alt")," Historia",_class="btn btn-primary btn-xs",_href=URL(r=request,f='page_history',args=slug))}}{{pass}} {{=A(I(_class="glyphicon glyphicon-edit")," Editar",_href=URL(r=request,f='page_edit',args=slug),_class="btn btn-primary btn-xs")}}</em></div>{{pass}}
+{{else:}}
+<div class="plugin_wiki_notification">Esta página no existe aún. <a href="{{=URL(r=request,f='page_edit',args=slug, vars=dict(template=request.vars.template or ''))}}">Cree esta página.</a></div>
+{{pass}}

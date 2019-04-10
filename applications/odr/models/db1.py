@@ -1,0 +1,42 @@
+folio = Field("folio")
+telefono = Field("telefono")
+tipo_servicio = Field("tipo_servicio")
+sector = Field("sector")
+cable = Field("cable")
+par = Field("par")
+red = Field("red")
+fecha_reporte = Field("fecha_reporte","datetime")
+clave = Field("clave")
+grupo = Field("grupo")
+demora = Field("demora")
+fecha_cierre = Field("fecha_cierre","datetime")
+despachador = Field("despachador")
+demora_en_hrs = Field("demora_en_hrs","double")
+central_tel = Field("central_tel")
+centro_tel = Field("centro_tel","reference ctlc",requires=IS_IN_DB(db,"ctlc.id","%(nombre)s"))
+gerencia = Field("gerencia")
+terminal = Field("terminal")
+direccion = Field("direccion")
+db.define_table("siprec_reparadas",folio,telefono,tipo_servicio,sector,cable,par,red,fecha_reporte,clave,grupo,demora,fecha_cierre,despachador,demora_en_hrs,central_tel,centro_tel,gerencia,terminal,direccion,migrate=1)
+
+cable1 = Field("cable1")
+par1 = Field("par1")
+cable2 = Field("cable2")
+par2 = Field("par2")
+servicio = Field("servicio")
+demora_total = Field("demora_total","double")
+problema = Field("problema")
+#SERVICIO	TIPO SERV	SECTOR	CABLE	PAR	CABLE	PAR	FECHA REPORTE	GRUPO	DEMORA	FOLIO	DEMORA TOTAL	Central Telefónica	Centro Telefónico	Gerencia	TERMINAL	DIRECCION	PROBLEMA
+
+db.define_table("siprec_pendientes_inicio",servicio,tipo_servicio,sector,cable1,par1,cable2,par2,fecha_reporte,grupo,demora,folio,demora_total,central_tel,centro_tel,gerencia,terminal,\
+                direccion,problema,migrate=1)
+
+servicio = Field("servicio")
+demora_total = Field("demora_total","double")
+problema = Field("problema")
+db.define_table("siprec_pendientes_cierre",servicio,tipo_servicio,sector,cable1,par1,cable2,par2,fecha_reporte,grupo,demora,folio,demora_total,central_tel,centro_tel,gerencia,terminal,\
+                direccion,problema,red,migrate=1)
+
+#db.siprec_reparadas_ra.truncate('RESTART IDENTITY CASCADE')
+#db.siprec_pendientes_inicio_ra.truncate('RESTART IDENTITY CASCADE')
+#db.siprec_pendientes_cierre_ra.truncate('RESTART IDENTITY CASCADE')

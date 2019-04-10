@@ -1,0 +1,76 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{footer_enabled=False}}
+{{extend 'layout.html'}}
+<style type="text/css">
+		@page { margin-right: 2cm; margin-top: 1.27cm; margin-bottom: 2cm }
+		p { margin-bottom: 0.21cm; direction: ltr; color: #000000; orphans: 0; widows: 0 }
+		p.western { font-family: "Arial", sans-serif; font-size: 11pt; so-language: es-AR }
+		p.cjk { font-family: "DejaVu Sans", "MS Gothic"; font-size: 11pt }
+		p.ctl { font-family: "Mangal", "Courier New", serif; font-size: 12pt; so-language: hi-IN }
+		h1 { margin-top: 0cm; margin-bottom: 0cm; direction: ltr; color: #000000; text-align: center; orphans: 0; widows: 0 }
+		h1.western { font-family: "Arial", sans-serif; font-size: 12pt; so-language: es-MX }
+		h1.cjk { font-family: "DejaVu Sans", "MS Gothic"; font-size: 12pt }
+		h1.ctl { font-family: "Arial", sans-serif; font-size: 12pt; so-language: hi-IN }
+		#socialdrawer{display:none!important;}
+		.main-container{margin-top:0!important;}
+	</style>
+
+<table style="width: 523.75pt;">
+		<tr>
+			<td><p lang="es-AR" align="right" style="margin-bottom: 0cm"><img src="{{=URL('static','images/etecsa-logo.png')}}" name="Imagen1" align="bottom" width="220" height="78" border="0"/><br>
+		<small style="font-size:10px"><i>Departamento
+	Tecnolog&iacute;a de la Informaci&oacute;n.</i><br>
+<i>		Direcci&oacute;n
+	Territorial Matanzas.</i></small>
+</p></td>
+		</tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td></tr>
+		<tr>
+			<td style="text-align:center"><u><b>ACTA DE DESTINO FINAL</b></u></td>
+		</tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td>&nbsp;</td></tr>
+	<tr><td><p>Por medio de
+la presente hacemos constar que el equipo: {{=denominacion}} recepcionado en nuestro Taller con Orden de Servicio No.: {{=orden_trabajo}} y No. de Inventario: {{=no_inventario}}
+perteneciente a la UO: {{=entidad}} ha sido
+dictaminado como Baja T&eacute;cnica y se le propone el siguiente
+Destino Final:</p>
+		<ol>
+			<li>__ Entrega a la Federaci&oacute;n de Radioaficionados de Cuba, provincia: ___________________</li>
+			<li>__ Entrega a la Federaci&oacute;n Colomb&oacute;fila de Cuba, provincia: __________________________</li>
+			<li>__ Entrega a la Federaci&oacute;n Filat&eacute;lica de Cuba, provincia: ____________________________</li>
+
+			<li>__ Reubicaci&oacute;n en la Unidad Organizativa: ________________________________________</li>
+
+			<li>__ Venta a Organismo: ______________________</li>
+
+			<li>__ Entrega de partes y piezas reutilizables al &Aacute;rea de Log&iacute;stica y Servicios y entrega del resto, como chatarra electr&oacute;nica  sin valor comercial, a la Empresa de Materias Primas</li>
+		</ol>
+	</td>
+	</tr>
+	<tr>
+		<td><p><strong>Descripci&oacute;n de las partes y piezas que se entregar&aacute;n al &Aacute;rea de Log&iacute;stica y Servicios:</strong></p>
+		{{=descripcion_piezas}}</td>
+	</tr>
+	<tr><td><p>Y para que as&iacute; conste, firma la presente la Comisi&oacute;n de Destino Final a los ______ d&iacute;as del mes de _______ a&ntilde;o _________</p></td></tr>
+	<tr><td>
+		<strong>INTEGRANTES NOMBRES, APELLIDOS Y FIRMA:</strong>
+		<ol>
+			<li><p>Especialista Principal _____________________________________, <strong>Firma: </strong>_______________</p></li>
+			<li><p>Representante del PCC _____________________________________, <strong>Firma: </strong>_______________</p></li>
+			<li><p>Representante de la Secci&oacute;n Sindical _____________________________________, <strong>Firma: </strong>_______________</p></li>
+			<li><p>Trabajador del Taller _____________________________________, <strong>Firma: </strong>_______________</p></li>
+			<li><p>Dirigente de &aacute;rea externa al Taller _____________________________________, <strong>Firma: </strong>_______________</p></li>
+		</ol>
+	</td></tr>
+	<tr><td><p><strong>Recibido por:</strong> Unidad Organizativa: {{=entidad}}</p></td></tr>
+		<tr>
+			<td>
+				<p><strong>Responsable del Activo:</strong> <br><strong>Nombres y Apellidos:</strong> <u>{{=responsable}}</u>, <strong>Cargo: </strong>_________________________<br>
+					<strong>Fecha: </strong>______________________, <strong>Firma: </strong>_________________________
+				</p>
+			</td>
+		</tr>
+
+</table>

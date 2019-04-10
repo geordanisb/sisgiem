@@ -1,0 +1,17 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3>Equipos SAP</h3>
+    </div>
+    <div class="panel-body">
+        {{=grid}}
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+$(".horizontal .active").removeClass("active")
+$("#equipos_sap").addClass("active")
+})
+</script>
+

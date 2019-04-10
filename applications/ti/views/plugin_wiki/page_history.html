@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+
+<h1>{{=page.title}} Historia</h1>
+<ul>
+  <li><em>{{=A("Modificada en: {} por {} como: {}".format(page.modified_on,autor(page.modified_by),page.title),_href=URL(r=request,f='page_archive',args=page.id))}} {{=XML(SPAN("página actual",_class="label label-info"))}}<br/>{{=page.changelog}}</em></li>
+  <!--<li>{{=A('%(modified_on)s por %(modified_by)s como "%(title)s" (página actual)' % page,_href=URL(r=request,f='page',args=page.slug))}}<br/>{{=page.changelog}}</li>-->
+
+  {{for item in history:}}
+  <li><em>{{=A("Modificada en: {} por {} como: {}".format(item.modified_on,autor(item.modified_by),item.title),_href=URL(r=request,f='page_archive',args=item.id))}}</em></li>
+  <!--<li>{{=A('%(modified_on)s por %(modified_by)s como "%(title)s"' % item,_href=URL(r=request,f='page_archive',args=item.id))}}<br/>{{=item.changelog}}</li>-->
+
+  {{pass}}
+</ul>

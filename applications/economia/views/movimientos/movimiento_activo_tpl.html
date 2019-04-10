@@ -1,0 +1,1031 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{footer_enabled=False}}
+
+{{extend 'layout.html'}}
+<table class="MsoNormalTable" style="width: 523.75pt; border-collapse: collapse; border: medium none;" border="1" cellpadding="0" cellspacing="0" width="698">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.75pt">
+  <td colspan="4" style="width:133.45pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="178">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Entidad:</b> {{=entidad}}</span></p>
+  </td>
+  <td colspan="4" style="width:97.05pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="129">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Código:</b></span></p>
+  </td>
+  <td colspan="9" rowspan="3" style="width:293.25pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" width="391">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>SC-1-01</b></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>MOVIMIENTO DE ACTIVOS FIJOS</b></span></p>
+  </td>
+
+ </tr>
+ <tr style="mso-yfti-irow:1;height:19.75pt">
+  <td colspan="8" style="width:230.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="307">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Dirección:</b> {{=direccion}}</span></p>
+  </td>
+  <td style="height:19.75pt;border:none" height="26" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:2;height:19.75pt">
+  <td colspan="8" style="width:230.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.75pt" valign="top" width="307">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Área:</b> {{=ce_coste}} {{=local_}}</span></p>
+  </td>
+  <td style="height:19.75pt;border:none" height="26" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:3;height:21.4pt">
+  <td colspan="17" style="width:523.75pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.4pt" valign="top" width="698">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Descripción:</b> {{=denominacion}}</span></p>
+
+  </td>
+
+ </tr>
+ <tr style="mso-yfti-irow:4;height:15.9pt">
+  <td colspan="3" style="width:91.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="121">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Fecha
+   Operación</b></span></p>
+  </td>
+  <td colspan="9" style="width:272.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="363">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Valor</b></span></p>
+  </td>
+  <td colspan="5" rowspan="2" style="width:160.45pt;
+  border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="214">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Depreciación</b></span></p>
+  <p class="MsoNormal" style="margin-top:0"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>MN</b></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal;tab-stops:center 74.8pt" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:15.9pt;border:none" height="21" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:5;height:19.1pt">
+  <td style="width:30.45pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.1pt" width="41">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="display:none;mso-ignore:vglayout;position:absolute;z-index:251662848;left:0px;
+  margin-left:23px;margin-top:25px;width:82px;height:32px">
+
+  </span><!--[endif]--><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:30.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.1pt" width="41">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:30.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.1pt" width="40">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+  <td colspan="4" style="width:129.35pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.1pt" valign="top" width="172">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>MN:</b> {{=val_adq_mn}}</span></p>
+
+  </td>
+  <td colspan="5" style="width:142.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.1pt" valign="top" width="190">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>ME:</b> {{=val_adq_me}}</span></p>
+
+  </td>
+  <td style="height:19.1pt;border:none" height="25" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:6;height:18.0pt">
+  <td style="width:30.35pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="40">
+  {{=fe_capit[0]}}
+  </td>
+  <td style="width:30.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="40">{{=fe_capit[1]}}
+  </td>
+  <td style="width:30.4pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="41">{{=fe_capit[2]}}
+  </td>
+  <td colspan="9" style="width:272.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="363">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>No. Inmovilizado</b></span></p>
+  </td>
+  <td colspan="5" rowspan="2" style="width:160.45pt;
+  border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="214">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>ME</b></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:18.0pt;border:none" height="24" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:7;height:22.5pt">
+  <td colspan="3" style="width:91.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt" width="121">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:normal"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>No. Inv:</b> {{=no_inventario}}</span></p>
+    </td>
+  <td colspan="4" style="width:129.35pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt" valign="top" width="172">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>MN:</b> {{=act_fijo_mn}}</span></p>
+
+  </td>
+  <td colspan="5" style="width:142.85pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:22.5pt" valign="top" width="190">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>ME:</b> {{=act_fijo_me}}</span></p>
+
+  </td>
+  <td style="height:22.5pt;border:none" height="30" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:8;height:17.0pt">
+  <td colspan="3" rowspan="3" style="width:91.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="121">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>RECEPTOR</b></span></p>
+  </td>
+  <td colspan="7" style="width:205.65pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="274">
+   <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Entidad:</b> {{=entidad_receptora}}</span></p>
+  </td>
+  <td colspan="7" style="width:227.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="303">
+   <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre
+    y Apellidos:</b> {{=receptor_responsable}}</span></p>
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:17.0pt;border:none" height="23" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:9;height:17.0pt">
+  <td colspan="7" style="width:205.65pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="274">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Dirección:</b> {{=direccion_receptora}}</span></p>
+  </td>
+  <td colspan="7" style="width:227.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="303">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma:</b>
+  </span></p>
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:17.0pt;border:none" height="23" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:10;height:18.0pt">
+  <td colspan="7" style="width:205.65pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="274">
+   <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Área:</b> {{=local_receptor}}</span></p>
+  </td>
+  <td colspan="7" style="width:227.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="303">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Fecha:</b></span></p>
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:18.0pt;border:none" height="24" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:11;height:18.0pt">
+  <td colspan="10" style="width:296.75pt;border-top:none;
+  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-left-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="396">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Tipo de Movimiento</b></span></p>
+  </td>
+  <td colspan="7" rowspan="4" style="width:227.0pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="303">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Fundamentación de la Operación</b> <br>{{=fundamentacion}}</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><b style="mso-bidi-font-weight:normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></b></p>
+  </td>
+
+ </tr>
+ <tr style="mso-yfti-irow:12;height:17.0pt">
+  <td colspan="3" style="width:91.1pt;border:none;
+  border-left:solid windowtext 1.0pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="121">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal;tab-stops:center 41.15pt">
+   <span class="caja"></span>Compra (altas)</p>
+  </td>
+  <td colspan="5" style="width:139.4pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="186">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">
+  <span class="caja"></span>Venta
+  </p>
+  </td>
+  <td colspan="2" style="width:66.25pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="88">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal">
+<span class="caja"></span>Pérdidas</p>
+  </td>
+  <td style="height:17.0pt;border:none" height="23" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:13;height:36.1pt">
+  <td colspan="3" style="width:91.1pt;border:none;
+  border-left:solid windowtext 1.0pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.1pt" valign="top" width="121">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Traslado interno</p>
+  </td>
+  <td colspan="5" style="width:139.4pt;border:none;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.1pt" valign="top" width="186">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Ajuste Inv. Baja</span></p>
+  </td>
+  <td colspan="2" style="width:66.25pt;border:none;
+  border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.1pt" valign="top" width="88">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Ocioso-Activo</span></p>
+  </td>
+  <td style="height:36.1pt;border:none" height="48" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:14;height:35.0pt">
+  <td colspan="3" style="width:91.1pt;border-top:none;
+  border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;
+  border-right:none;mso-border-left-alt:solid windowtext .5pt;mso-border-bottom-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:35.0pt" valign="top" width="121">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Enviado a reparar</span><br><span class="caja"></span>Baja</span></p>
+  </td>
+  <td colspan="5" style="width:139.4pt;border:none;
+  border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:35.0pt" valign="top" width="186">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Ajuste Inv. Alta</span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Alquiler</span></p>
+  </td>
+  <td colspan="2" style="width:66.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:35.0pt" valign="top" width="88">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span class="caja"></span>Activo- Ocioso</span></p>
+  </td>
+  <td style="height:35.0pt;border:none" height="47" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:15;height:17.9pt">
+  <td colspan="17" rowspan="3" style="width:523.75pt;
+  border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.9pt" valign="top" width="698">
+  <p align="center"><b>INFORME TÉCNICO</b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:16;height:17.9pt">
+  <td style="height:17.9pt;border:none" height="24" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:17;height:17.9pt">
+  <td style="height:17.9pt;border:none" height="24" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:18;height:33.25pt">
+  <td colspan="5" style="width:170.3pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:33.25pt" valign="top" width="227">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre:</b> </span></p>
+  </td>
+  <td colspan="6" style="width:170.3pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:33.25pt" valign="top" width="227">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Cargo:</b> </span></p>
+  </td>
+  <td colspan="6" style="width:183.15pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:33.25pt" valign="top" width="244">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma:</b></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:19;height:17.0pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Hecho
+  por:</b> </span></p>
+  </td>
+  <td colspan="2" width="42" style="border-right:solid 1px black;border-bottom:solid 1px black">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:32.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:33.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Aprobado
+  por:</b> </span></p>
+  </td>
+  <td style="width:27.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:26.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:26.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:20;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre:</b> {{=realiza_nombre}}</span></p>
+  </td>
+  <td colspan="2" style="width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"> {{=hecho_en.day}}</span></p>
+  </td>
+  <td style="width:32.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"> {{=hecho_en.month}}</span></p>
+  </td>
+  <td style="width:33.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"> {{=hecho_en.year}}</span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre:</b>
+</span> {{=aprueba}}</p>
+  </td>
+  <td style="width:27.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:26.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:26.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:21;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Cargo:</b>  {{=realiza_cargo}}</span></p>
+  </td>
+  <td colspan="2" rowspan="2" style="width:31.4pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:32.6pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:33.65pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Cargo:</b> {{=cargo}}</span></p>
+  </td>
+  <td rowspan="2" style="width:27.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:26.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:26.55pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:22;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma:</b></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma:</b>
+  </span></p>
+  </td>
+  <td style="height:15.9pt;border:none" height="21" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:23;height:18.0pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Autorizado
+  por:</b></span></p>
+  </td>
+  <td colspan="2" style="width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:32.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:33.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Anotado por:</b> </span></p>
+  </td>
+  <td style="width:27.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:26.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:26.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.0pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:24;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre:</b> </span></p>
+  </td>
+  <td colspan="2" style="width:31.4pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:32.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:33.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre:</b> {{=anota_nombre
+  }}</span></p>
+  </td>
+  <td style="width:27.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:26.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:26.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:25;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Cargo:</b> </span></p>
+  </td>
+  <td colspan="2" rowspan="2" style="width:31.4pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:32.6pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:33.65pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Cargo:</b> {{=anota_cargo}}</span></p>
+  </td>
+  <td rowspan="2" style="width:27.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:26.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:26.55pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:26;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma:</b></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma:</b></span></p>
+  </td>
+  <td style="height:15.9pt;border:none" height="21" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:27;height:17.0pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Transportador
+  o Receptor:</b></span></p>
+  </td>
+  <td colspan="2" style="width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:32.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:33.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+  <td colspan="4" style="width:147.25pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="196">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>No.
+  De Comprobante:</b></span></p>
+  </td>
+  <td style="width:27.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>D</b></span></p>
+  </td>
+  <td style="width:26.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>M</b></span></p>
+  </td>
+  <td style="width:26.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>A</b></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:28;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Nombre:</span></p>
+  </td>
+  <td colspan="2" style="width:31.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:32.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:33.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td colspan="3" style="width:73.6pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="98">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:8.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:73.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="98">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:7.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:8.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:27.2pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="36">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:26.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td style="width:26.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" width="35">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal" align="center"><span style="font-size:9.0pt;
+  font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:15.9pt;border:none" height="21" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:29;height:15.9pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Licencia
+  de Conducción:</span></p>
+  </td>
+  <td colspan="2" rowspan="2" style="width:31.4pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="42">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:32.6pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="43">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td rowspan="2" style="width:33.65pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="45">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"></span></p>
+  </td>
+  <td colspan="7" rowspan="2" style="width:227.0pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.9pt" valign="top" width="303">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>No. Consecutivo:</b> {{=no_consecutivo}}</span></p>
+
+  </td>
+  <!--[if !supportMisalignedRows]-->
+  <td style="height:15.9pt;border:none" height="21" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <tr style="mso-yfti-irow:30;mso-yfti-lastrow:yes;height:17.0pt">
+  <td colspan="6" style="width:199.1pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:17.0pt" valign="top" width="265">
+  <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal"><span style="font-size:9.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;" lang="ES-MX"><b>Firma</b></span></p>
+  </td>
+  <td style="height:17.0pt;border:none" height="23" width="0"></td>
+  <!--[endif]-->
+ </tr>
+ <!--[if !supportMisalignedColumns]-->
+
+ <tr height="0">
+  <td style="border:none" width="41"></td>
+  <td style="border:none" width="41"></td>
+  <td style="border:none" width="41"></td>
+  <td style="border:none" width="56"></td>
+  <td style="border:none" width="49"></td>
+  <td style="border:none" width="38"></td>
+  <td style="border:none" width="29"></td>
+  <td style="border:none" width="13"></td>
+  <td style="border:none" width="43"></td>
+  <td style="border:none" width="45"></td>
+  <td style="border:none" width="58"></td>
+  <td style="border:none" width="31"></td>
+  <td style="border:none" width="9"></td>
+  <td style="border:none" width="98"></td>
+  <td style="border:none" width="36"></td>
+  <td style="border:none" width="35"></td>
+  <td style="border:none" width="35"></td>
+  <td style="border:none" width="0"><p class="MsoNormal">&nbsp;</p></td>
+ </tr>
+ <!--[endif]-->
+
+</tbody></table>
+<span class="marca-agua">Elaborado por SisGiem {{=hecho_en}}</span>
+<style>span.caja{
+ margin-right:2px;
+ border: solid 1px black;
+ width: 1em;
+ height: 1em;
+ display: inline-block;}
+.marca-agua{
+    font-size: 10px;
+    opacity: .5;
+}
+ .main-container{    margin-top: 0px;}
+</style>

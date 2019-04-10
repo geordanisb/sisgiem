@@ -1,0 +1,62 @@
+{{extend 'layout.html'}}
+
+<div class="panel panel-info">
+    <div class="panel-heading">
+            <h5>Páginas de la wiki</h5>    
+    </div>    
+    <div class="panel-body">
+        <a href="{{=URL('plugin_wiki','ayuda-wiki')}}" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-question-sign"></i> Ayuda de la wiki</a>
+        {{if form:}}
+        <h3>Crear página</h3>
+        {{=form}}
+        {{pass}}
+        
+<h3>Páginas actuales</h3>
+   {{len_ = len(pages)}}
+   {{cant = len_/2 if len_%2==0 else (len_/2)+1}}
+
+   {{pages_left=pages[:cant]}}
+   {{pages_right=pages[cant:]}}
+<div class="container-fluid">
+    <div class="col-md-6">
+        <ul class="list-unstyled">
+  {{for page in pages_left:}}
+    <li class="well well-sm">
+        <p>
+            <em><b>Creada en: </b>{{=page.created_on}}, <b>por: </b>{{=autor(page.created_by)}}, <b>estado:</b> {{=page.is_active and 'activo' or 'inactivo'}}, <b>acceso:</b> {{=page.is_public and B('público') or B('restringido')}}</em>
+        </p>
+        <h4>
+             {{=A(page.title,_href=URL(r=request,f='page',args=page.slug))}} {{=A(I(_class="glyphicon glyphicon-edit"),' Editar',_href=URL(r=request,f='page_edit',args=page.slug),_class="btn btn-primary btn-xs")}}
+        </h4>
+    </li>
+  {{pass}}
+</ul>
+    </div>
+    <div class="col-md-6">
+        <ul class="list-unstyled">
+  {{for page in pages_right:}}
+    <li class="well well-sm">
+        <p>
+            <em><b>Creada en: </b>{{=page.created_on}}, <b>por: </b>{{=autor(page.created_by)}}, <b>estado:</b> {{=page.is_active and 'activo' or 'inactivo'}}, <b>acceso:</b> {{=page.is_public and B('público') or B('restringido')}}</em>
+        </p>
+        <h4>
+             {{=A(page.title,_href=URL(r=request,f='page',args=page.slug))}} {{=A(I(_class="glyphicon glyphicon-edit"),' Editar',_href=URL(r=request,f='page_edit',args=page.slug),_class="btn btn-primary btn-xs")}}
+        </h4>
+    </li>
+  {{pass}}
+</ul>
+    </div>
+</div>
+        
+<!--<h3>Información</h3>
+Las páginas que inician con quión bajo son concideradas "páginas del sistema". En particular:
+<ul>
+  <li><a href="{{=URL(r=request,f='page',args='meta-code')}}">meta-code</a> debe contener código y sera ejecutada por cada página.</li>
+  <li><a href="{{=URL(r=request,f='page',args='meta-menu')}}">meta-menu</a> debe contener una descripción de menú.</li>
+  <li><a href="{{=URL(r=request,f='page',args='meta-header')}}">meta-header</a> contiene el contenido del header.</li>
+  <li><a href="{{=URL(r=request,f='page',args='meta-sidebar')}}">meta-sidebar</a> contiene el contenido del sidebar.</li>
+  <li><a href="{{=URL(r=request,f='page',args='meta-footer')}}">meta-footer</a> contiene el contenido de footer.</li>
+</ul>-->
+
+    </div>
+</div>

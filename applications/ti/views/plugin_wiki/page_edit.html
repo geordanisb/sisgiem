@@ -1,0 +1,100 @@
+{{extend 'layout.html'}}
+
+<script type="text/javascript" src="{{=URL('static','plugin_wiki/markitup/jquery.markitup.pack.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static','plugin_wiki/markitup/sets/markmin/set.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{=URL('static','plugin_wiki/markitup/skins/markitup/style.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{=URL('static','plugin_wiki/markitup/sets/markmin/style.css')}}" />
+<script src="{{=URL('static','plugin_wiki/elrte-1.0rc4/js/elrte.min.js')}}" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="{{=URL('static','plugin_wiki/elrte-1.0rc4/css/elrte.full.css')}}" type="text/css" media="screen" charset="utf-8">
+{{=H4(A(I(_class="glyphicon glyphicon-arrow-left"),' Regresar',_href=URL(r=request, f='index'),_class="btn btn-primary btn-xs"))}}
+<div id="plugin_wiki_form">
+{{=form.custom.begin}}
+<b>Página:</b> {{=form.custom.widget.slug}}<br/>
+<b>Título:</b> {{=form.custom.widget.title}}<br/>
+<b>Activo:</b> {{=form.custom.widget.is_active}}<br/>
+<b>Publico:</b> {{=form.custom.widget.is_public}}<br/>
+[{{=plugin_wiki.attachments('page',page.id)}}]
+{{if plugin_wiki_level>1:}}[{{=plugin_wiki.widget_builder()}}]{{pass}}<br/>
+{{=form.custom.widget.body}}<br/>
+<b>Rol:</b> {{=form.custom.widget.role}}
+<b>Changelog:</b> {{=form.custom.widget.changelog}}<br/>
+<b>Eliminar?</b> {{=form.custom.deletable}}<br/>
+ {{=form.custom.submit}}
+{{=form.custom.end}}
+</div>
+
+{{if request.extension=='html' and not page.slug.startswith('meta-'):}}
+<script>
+jQuery(document).ready(function() {
+{{if plugin_wiki_mode=='html':}}
+  elRTE.prototype.options.panels.web2pyPanel = [
+     'bold', 'italic', 'underline', 'forecolor', 'justifyleft', 'justifyright',
+     'justifycenter', 'justifyfull', 'formatblock', 'insertorderedlist', 'insertunorderedlist',
+     'link', 'image', 'flash'];
+  elRTE.prototype.options.toolbars.web2pyToolbar = ['web2pyPanel', 'tables'];
+  var opts = { toolbar  : 'web2pyToolbar' }
+  jQuery('#plugin_wiki_page_body').elrte(opts);
+{{else:}}
+  jQuery('#plugin_wiki_page_body').css('width','700px').css('height','400px').markItUp(mySettings);
+{{pass}}
+});
+</script>
+
+<a href="#" onclick="jQuery('#plugin_wiki_help').toggleClass('hidden'); return false;">Ayuda</a>
+<div id="plugin_wiki_help" class="hidden">
+<h2>Ayuda con la sintaxis</h2>
+<pre>
+# titulo
+## subtitulo
+### subsubtitulo
+parrafo con **negrita**, ''italic'' and ``code``
+[["a link" http://example.com]], [[a_anchor]] and [["a link to" #a_anchor]]
+[["an image" http://example.com left 200px]]
+
+- item
+- item
+
++ item 1
++ item 2
+
+-----
+blockquote
+-----
+
+-----
+1 | 2
+3 | 4
+-----
+
+``
+def index():
+    return 'hello'
+``:code_python
+
+``
+name: create
+``:widget
+
+``
+name: youtube
+code: x1w8hKTJ2Co
+``:widget
+
+Listado de nombres:
+
+- read, create, update, search, select, jqgrid
+- youtube, vimeo, mediaplayer
+- comments, tags, tag_cloud
+
+
+</pre>
+</div>
+{{else:}}
+<script>
+jQuery(document).ready(function() {
+jQuery('#plugin_wiki_page_body').css('width','700px').css('height','400px');
+});
+{{pass}}
+</script>
+{{pass}}
+

@@ -1,0 +1,38 @@
+{{left_sidebar_enabled=True}}
+{{extend 'layout.html'}}
+
+{{block left_sidebar}}
+
+  <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Operaciones</h3>
+  </div>
+    {{=MENU(response.menu[1:])}}
+</div>
+
+{{end}}
+
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        {{if globals().get("titulo"):}}
+        {{=titulo}}
+        {{pass}}
+      </h3>
+    </div>
+  <div class="panel-body">
+    {{if globals().get("contenido"):}}
+        {{=contenido}}
+        {{pass}}
+  </div>
+<script>
+$(document).ready(function(){
+    $(".horizontal .active").removeClass("active")
+    {{if globals().get("link_ativo"):}}
+      $("#{{=link_ativo}}").addClass("active")
+    {{pass}}
+})
+</script>
+
+

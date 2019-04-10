@@ -1,0 +1,9 @@
+{{left_sidebar_enabled=True}}
+{{extend 'layout.html'}}
+{{=grid}}
+<script>
+    $(document).ready(function(){
+        $(".horizontal .active").removeClass("active")
+        $("#hardware").addClass("active")
+    })
+</script>

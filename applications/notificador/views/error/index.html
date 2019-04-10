@@ -1,0 +1,13 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h3>ERROR</h3>
+    </div>
+    <div class="panel-body">
+        {{=error_msg}}
+        {{=btn_back}}
+        {{=session.contenido}}
+        {{session.contenido=""}}
+    </div>
+</div>

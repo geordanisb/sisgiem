@@ -1,0 +1,38 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{footer_enabled=False}}
+{{extend 'layout.html'}}<h5><strong><u>Modelo demanda mensual de combustible por Actividades a realizar por vehículo</u></strong></h5>
+    <table class="table table-condensed">
+        <tr>
+            <td><p><strong>Perteneciente al área:</strong> {{=dpto}}</p>
+                <p><strong>Asignado a:</strong> {{=responsable_nombre}}</p>
+                <p><strong>Cargo:</strong> {{=cargo}}</p>
+                <p><strong>Tipo:</strong> {{=tipo_vehiculo}}</p>
+                <p><strong>Marca:</strong> {{=marca}}</p>
+                <p><strong>Modelo:</strong> {{=modelo_vehiculo}}</p>
+                <p><strong>Ind.de consumo (km/litro):</strong></strong> <b>{{=ind_consumo}}</b></p></td>
+            <td>
+                <p><strong>Mes para el que se demanda:</strong> {{=fecha_demanda.month+1}}</p>
+                <p><strong>Tipo Combustible:</strong> {{=tipo_combustible}}</p>
+            </td>
+        </tr>
+    </table>
+{{=table}}
+<table class="table table-bordered table-condensed" style="margin-top:0px"
+    <tr>
+        <td>
+            <strong>ELABORADO POR:</strong> {{=elabora}}<br>
+            <strong>Cargo:</strong> Jefe Grupo Soporte<br>
+            <strong>Fecha:</strong> {{=fecha_demanda}}
+        </td>
+        <td>
+            <strong>APROBADO POR:</strong> {{=responsable_nombre}}<br>
+            <strong>Cargo:</strong> {{=cargo}}<br>
+            <strong>Fecha:</strong> {{=fecha_demanda}}
+        </td>
+    </tr>
+</table>
+
+<style>
+    h5{margin-top: 0;}
+    .table-bordered{margin-bottom:0 !important}
+</style>

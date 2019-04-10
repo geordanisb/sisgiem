@@ -1,0 +1,18 @@
+{{left_sidebar_enabled,right_sidebar_enabled=False,('message' in globals())}}
+{{extend 'layout.html'}}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3>Importar Equipos SAP</h3>
+    </div>
+    <div class="panel-body">
+        <p class="well">En SAP PM exporte los equipo a un archivo en formato CSV (columnas separadas por coma), chequee que esten las columnas necesarias y elimine las que esten vacías.</p>
+        {{=form}}
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+$(".horizontal .active").removeClass("active")
+$("#equipos_sap").addClass("active")
+})
+</script>
+
